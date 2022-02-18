@@ -12,8 +12,9 @@
 .icon h2
 {
     position: relative;
-    color: #fff;
+    color: #111;
     font-size: 2em;
     font-weight: normal;
     text-shadow: 0 10px 10px rgb(66, 66, 66);
+    box-shadow: 10px 0 0 #222;
 }

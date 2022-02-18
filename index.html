@@ -11,7 +11,7 @@
      body{
          text-align: center;
          min-height: 100vh;
-         background: #111;
+         background: #dcdde1;
          overflow: hidden;
      }
      svg{
@@ -23,18 +23,28 @@
          margin-top: 150px;
      }
      svg use{
-         stroke: #fff;
+         stroke: #00BFFF;
          animation: animate 2.5s linear infinite;
      }
-     @keyframes animate {
+     @keyframes animate 
+     {
          to{
-             stroke-dashoffset: 0px;
+             stroke-dashoffset: 10px;
          }
-        }
+         0%
+         {
+             filter: hue-rotate(0deg);
+         }
+         100%
+         {
+             filter: hue-rotate(360deg);
+         }
+     }
 
     </style>
 </head>
 <body>
+    <section>
     <div class="icon">
     <svg viewBox="  -2000 -1000 4000 2000">
         <path id="stroke" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
@@ -42,6 +52,6 @@
     </svg>
     <h2>Carregando...</h2>
     </div>
-    
+    </section>
 </body>
 </html>
